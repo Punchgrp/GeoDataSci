@@ -306,7 +306,7 @@ fil = pd.DataFrame()
 ## filter data
 if pick == True :
 	len_hour = hour_sto.hour-hour_sta.hour
-	if lenhour == 0 :
+	if len_hour == 0 :
 		len_hour = 1
 	for i in range(len_hour) :
 		a = data['timestart'].dt.hour
@@ -320,7 +320,7 @@ if pick == True :
 		chart_data = pd.DataFrame({"minute": range(len_min), "pickups": hist})
 else :
 	len_hour = hour_sto.hour-hour_sta.hour
-	if lenhour == 0 :
+	if len_hour == 0 :
 		len_hour = 1
 	for i in range(len_hour) :
 		a = data['timestop'].dt.hour
