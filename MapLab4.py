@@ -195,7 +195,7 @@ if pick == True :
 else :
 	show = date_selected+' (M/D/YYYY)' +' from '+ hour_sta1 + ' to '+ hour_sto1 + ' (Destination)'
 	st.write( show )
-	data_all = data_all[(data_all['timestop'].dt.hour >= hour_sto.hour) & ( data_all['timestop'].dt.hour <= hour_sto.hour)]
+	data_all = data_all[(data_all['timestop'].dt.hour >= hour_sta.hour) & ( data_all['timestop'].dt.hour <= hour_sto.hour)]
 	data1 = data1[(data1['timestop'].dt.hour >= hour_sta.hour) & ( data1['timestop'].dt.hour <= hour_sto.hour)]
 	data2 = data2[(data2['timestop'].dt.hour >= hour_sta.hour) & ( data2['timestop'].dt.hour <= hour_sto.hour)]
 	data3 = data3[(data3['timestop'].dt.hour >= hour_sta.hour) & ( data3['timestop'].dt.hour <= hour_sto.hour)]
