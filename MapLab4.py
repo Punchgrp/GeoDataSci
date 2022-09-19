@@ -70,8 +70,8 @@ with row1_1:
 
 with row1_2:
     st.header('Mapping of Pickup and Destination extracted from iTIC data')
-    st.write('Lab 5 Geospatial Data Science By ')
-    st.write('6130816521 Paponpat Limpanithiphat ')
+    st.write('Geospatial Data Science By ')
+    st.write('Paponpat Limpanithiphat ')
     st.write('Select Data')
     pick = row1_2.button("Pickup") ; des = row1_2.button("Destination")
 
